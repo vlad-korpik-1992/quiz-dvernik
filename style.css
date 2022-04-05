@@ -61,6 +61,7 @@ body {
     min-width: 180px;
 }
 .popup {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -74,12 +75,14 @@ body {
     overflow-y: auto;
 }
 .popup.open {
+    display: block;
     opacity: 1;
     visibility: visible;
 }
 .popup__body {
-    min-height: 100%;
-    max-height: 700px;
+    position: relative;
+    margin-top: 15px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,6 +93,7 @@ body {
     opacity: 1;
     width: 992px;
     max-width: 992px;
+    height: fit-content;
 }
 .popup__content {
     position: relative;
@@ -108,7 +112,12 @@ body {
     padding: 0 0 33px 0;
 }
 .form__group_end{
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 33px;
+}
+.form__group:last-child{
+    padding-bottom: 0;
 }
 input[type="checkbox"] {
     position: absolute;
@@ -193,6 +202,7 @@ input[type="radio"]:checked+label:after {
     margin-right: -15px;
 }
 .popup__items{
+    position: relative;
     flex: 0 0 50%;
     max-width: 50%;
     padding-left: 15px;
@@ -215,6 +225,7 @@ input[type="radio"]:checked+label:after {
     font-weight: 700;
 }
 .question__btn{
+    min-width: 250px;
     max-width: 250px;
     height: 60px;
     background-color: #2d3f50;
@@ -227,6 +238,100 @@ input[type="radio"]:checked+label:after {
     border-radius: 10px;
     padding: 0 59px;
     cursor: pointer;
+}
+.question__btn:first-child{
+    margin-right: 30px;
+}
+.popup__img_absolute{
+    position: absolute;
+    left: -35px;
+}
+.popup__title_small{
+    font-size: 32px;
+    line-height: 36px;
+}
+.form__group__box{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 86px;
+}
+.form__group__box__items{
+    background-color: #fff;
+    flex: 0 0 155px;
+    max-width: 155px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 0 !important;
+    color: #fff !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.form__group__box__items_viber{
+    background-color: #aa6482; 
+}
+.form__group__box__items_telegram{
+    background-color: #1976d2; 
+}
+.form__group__box__items_whatsapp{
+    background-color: #4caf50; 
+}
+.form__group__box__items_phone{
+    background-color: #ed6161; 
+}
+.form__group__box__items:before{
+    display: none;
+}
+.form__group__box__items:after{
+    display: none;
+}
+.form__group__box__items_choice{
+    background-color: #000;
+}
+.popup__input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    font-size: 48px;
+    line-height: 36px;
+    font-weight: 700;
+    padding-bottom: 65px;
+}
+.popup__input:focus{
+    outline: none;
+}
+.popup__input:last-child{
+    padding-bottom: 0;
+}
+.form__group__error {
+    color: #008000;
+    font-size: 14px;
+    font-weight: 500;
+}
+.error{
+    color: #e3201b;
+}
+.popup__items_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form__group__select{
+    height: 66px;
+    border: 1px solid #000;
+    padding: 0px 15px;
+    font-size: 24px;
+    line-height: 75%;
+}
+.question__btn_10{
+    max-width: 100%;
 }
 @media(max-width: 767px){
     .popup__items:first-child{
@@ -262,5 +367,37 @@ input[type="radio"]:checked+label:after {
     input[type="checkbox"]+label:after{
         width: 18px;
         height: 10px;
+    }
+    .form__group_end{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .question__btn:first-child{
+        margin-right: 0;
+    }
+    .question__btn{
+        margin-bottom: 15px;
+    }
+    .question__btn:last-child{
+        margin-bottom: 0;
+    }
+    input[type="radio"]+label:before{
+        height: 30px;
+        width: 30px;
+    }
+    input[type="radio"]+label:after{
+        height: 10px;
+        width: 10px;
+    }
+    .form__group__box{
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    .form__group__box__items{
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    .form__group__box__items_viber{
+        margin-bottom: 10px;
     }
 }

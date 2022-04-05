@@ -18,7 +18,7 @@
     <section id="question_1" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">1/10</div>
+                <div class="question__number">1/9</div>
                 <div class="popup__header">
                     <div class="popup__title">Выберите тип дверей:</div>
                 </div>
@@ -50,7 +50,7 @@
     <section id="question_2" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">2/10</div>
+                <div class="question__number">2/9</div>
                 <div class="popup__header">
                     <div class="popup__title">Укажите количество дверных проемов:</div>
                 </div>
@@ -58,10 +58,10 @@
                     <div class="popup__items">
                         <img class="popup__img" src="img/quiz-2.png" alt="">
                     </div>
-                    <div class="popup__items">
+                    <div class="popup__items popup__items_center">
                         <div class="form__group">
-                            <select name="answer2" id="answer2">
-                                <option value="">--Количество дверных проемов--</option>
+                            <select class="form__group__select" name="answer2" id="answer2">
+                                <option value="">--Выбор--</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -77,6 +77,7 @@
                     </div>
                 </div>
                 <div class="form__group form__group_end">
+                    <button type="submit" class="question__btn question__btn_back2">Назад</button>
                     <button type="submit" class="question__btn question__btn_2">Продолжить</button>
                 </div>
             </div>
@@ -85,7 +86,7 @@
     <section id="question_3" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">3/10</div>
+                <div class="question__number">3/9</div>
                 <div class="popup__header">
                     <div class="popup__title">Нужна ли установка:</div>
                 </div>
@@ -105,6 +106,7 @@
                     </div>
                 </div>
                 <div class="form__group form__group_end">
+                    <button type="submit" class="question__btn question__btn_back3">Назад</button>
                     <button type="submit" class="question__btn question__btn_3">Продолжить</button>
                 </div>
             </div>
@@ -113,27 +115,28 @@
     <section id="question_4" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">4/10</div>
+                <div class="question__number">4/9</div>
                 <div class="popup__header">
                     <div class="popup__title">Нужны ли Вам откосы:</div>
                 </div>
                 <div class="popup__box">
                     <div class="popup__items">
-                        <img class="popup__img" src="" alt="">
+                        <img class="popup__img" src="img/quiz-4.png" alt="">
                     </div>
                     <div class="popup__items">
                         <div class="form__group">
                             <input type="radio" name="answer4" id="answer41" value="Да">
-                            <label for="answer41">Да</label>
+                            <label class="form__group__label" for="answer41">Да</label>
                         </div>
                         <div class="form__group">
                             <input type="radio" name="answer4" id="answer42" value="Нет">
-                            <label for="answer42">Нет</label>
-                        </div>
-                        <div class="form__group form__group_end">
-                            <button type="submit" class="question__btn question__btn_4">Продолжить</button>
+                            <label class="form__group__label" for="answer42">Нет</label>
                         </div>
                     </div>
+                </div>
+                <div class="form__group form__group_end">
+                    <button type="submit" class="question__btn question__btn_back4">Назад</button>
+                    <button type="submit" class="question__btn question__btn_4">Продолжить</button>
                 </div>
             </div>
         </div>
@@ -142,39 +145,40 @@
     <section id="question_5" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">5/10</div>
+                <div class="question__number">5/9</div>
                 <div class="popup__header">
                     <div class="popup__title">Из какого материала нужны двери?</div>
                 </div>
                 <div class="popup__box">
                     <div class="popup__items">
-                        <img class="popup__img" src="" alt="">
+                        <img class="popup__img popup__img_absolute" src="img/quiz-5.png" alt="">
                     </div>
                     <div class="popup__items">
                         <div class="form__group">
                             <input type="radio" name="answer5" id="answer51" value="Массив">
-                            <label for="answer51">Массив</label>
+                            <label class="form__group__label" class="form__group__label" for="answer51">Массив</label>
                         </div>
                         <div class="form__group">
                             <input type="radio" name="answer5" id="answer52" value="Экошпон">
-                            <label for="answer52">Экошпон</label>
+                            <label class="form__group__label" class="form__group__label" for="answer52">Экошпон</label>
                         </div>
                         <div class="form__group">
                             <input type="radio" name="answer5" id="answer53" value="МДФ окрашенный">
-                            <label for="answer53">МДФ окрашенный</label>
+                            <label class="form__group__label" class="form__group__label" for="answer53">МДФ окрашенный</label>
                         </div>
                         <div class="form__group">
                             <input type="radio" name="answer5" id="answer54" value="Другое">
-                            <label for="answer54">Другое</label>
+                            <label class="form__group__label" class="form__group__label" for="answer54">Другое</label>
                         </div>
                         <div class="form__group">
                             <input type="radio" name="answer5" id="answer55" value="Еще не определились">
-                            <label for="answer55">Еще не определились</label>
-                        </div>
-                        <div class="form__group form__group_end">
-                            <button type="submit" class="question__btn question__btn_5">Продолжить</button>
+                            <label class="form__group__label" class="form__group__label" for="answer55">Еще не определились</label>
                         </div>
                     </div>
+                </div>
+                <div class="form__group form__group_end">
+                    <button type="submit" class="question__btn question__btn_back5">Назад</button>
+                    <button type="submit" class="question__btn question__btn_5">Продолжить</button>
                 </div>
             </div>
         </div>
@@ -183,51 +187,52 @@
     <section id="question_6" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">6/10</div>
+                <div class="question__number">6/9</div>
                 <div class="popup__header">
                     <div class="popup__title">Какая конструкция дверей нужна?</div>
                 </div>
                 <div class="popup__box">
                     <div class="popup__items">
-                        <img class="popup__img" src="" alt="">
+                        <img class="popup__img" src="img/quiz-6.png" alt="">
                     </div>
                     <div class="popup__items">
                         <div class="form__group">
                             <input type="checkbox" name="answer6[]" id="answer61" value="Распашные">
-                            <label for="answer61">Распашные</label>
+                            <label class="form__group__label" for="answer61">Распашные</label>
                         </div>
                         <div class="form__group">
                             <input type="checkbox" name="answer6[]" id="answer62" value="Двойные">
-                            <label for="answer62">Двойные</label>
+                            <label class="form__group__label" for="answer62">Двойные</label>
                         </div>
                         <div class="form__group">
                             <input type="checkbox" name="answer6[]" id="answer63" value="Раздвижные">
-                            <label for="answer63">Раздвижные</label>
+                            <label class="form__group__label" for="answer63">Раздвижные</label>
                         </div>
                         <div class="form__group">
                             <input type="checkbox" name="answer6[]" id="answer64" value="Дверь гармошка">
-                            <label for="answer64">Дверь гармошка</label>
+                            <label class="form__group__label" for="answer64">Дверь гармошка</label>
                         </div>
                         <div class="form__group">
                             <input type="checkbox" name="answer6[]" id="answer65" value="С зеркалом">
-                            <label for="answer65">С зеркалом</label>
+                            <label class="form__group__label" for="answer65">С зеркалом</label>
                         </div>
                         <div class="form__group">
                             <input type="checkbox" name="answer6[]" id="answer66" value="Скрытые двери">
-                            <label for="answer66">Скрытые двери</label>
+                            <label class="form__group__label" for="answer66">Скрытые двери</label>
                         </div>
                         <div class="form__group">
                             <input type="checkbox" name="answer6[]" id="answer67" value="Другие">
-                            <label for="answer67">Другие</label>
+                            <label class="form__group__label" for="answer67">Другие</label>
                         </div>
                         <div class="form__group">
                             <input type="checkbox" name="answer6[]" id="answer68" value="Еще не определились">
-                            <label for="answer68">Еще не определились</label>
-                        </div>
-                        <div class="form__group form__group_end">
-                            <button type="submit" class="question__btn question__btn_6">Продолжить</button>
+                            <label class="form__group__label" for="answer68">Еще не определились</label>
                         </div>
                     </div>
+                </div>
+                <div class="form__group form__group_end">
+                    <button type="submit" class="question__btn question__btn_back6">Назад</button>
+                    <button type="submit" class="question__btn question__btn_6">Продолжить</button>
                 </div>
             </div>
         </div>
@@ -236,35 +241,36 @@
     <section id="question_7" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">7/10</div>
+                <div class="question__number">7/9</div>
                 <div class="popup__header">
                     <div class="popup__title">В какой тип жилья нужны двери?</div>
                 </div>
                 <div class="popup__box">
                     <div class="popup__items">
-                        <img class="popup__img" src="" alt="">
+                        <img class="popup__img" src="img/quiz-7.png" alt="">
                     </div>
                     <div class="popup__items">
                         <div class="form__group">
                             <input type="radio" name="answer7" id="answer71" value="Новостройка">
-                            <label for="answer71">Новостройка</label>
+                            <label class="form__group__label" for="answer71">Новостройка</label>
                         </div>
                         <div class="form__group">
                             <input type="radio" name="answer7" id="answer72" value="Вторичное жилье">
-                            <label for="answer72">Вторичное жилье</label>
+                            <label class="form__group__label" for="answer72">Вторичное жилье</label>
                         </div>
                         <div class="form__group">
                             <input type="radio" name="answer7" id="answer73" value="Частный дом">
-                            <label for="answer73">Частный дом</label>
+                            <label class="form__group__label" for="answer73">Частный дом</label>
                         </div>
                         <div class="form__group">
                             <input type="radio" name="answer7" id="answer74" value="Другое">
-                            <label for="answer74">Другое</label>
-                        </div>
-                        <div class="form__group form__group_end">
-                            <button type="submit" class="question__btn question__btn_7">Продолжить</button>
+                            <label class="form__group__label" for="answer74">Другое</label>
                         </div>
                     </div>
+                </div>
+                <div class="form__group form__group_end">
+                    <button type="submit" class="question__btn question__btn_back7">Назад</button>
+                    <button type="submit" class="question__btn question__btn_7">Продолжить</button>
                 </div>
             </div>
         </div>
@@ -272,35 +278,36 @@
     <section id="question_8" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">8/10</div>
+                <div class="question__number">8/9</div>
                 <div class="popup__header">
-                    <div class="popup__title">В какой тип жилья нужны двери?</div>
+                    <div class="popup__title">Куда нужно будет доставить двери?</div>
                 </div>
                 <div class="popup__box">
                     <div class="popup__items">
-                        <img class="popup__img" src="" alt="">
+                        <img class="popup__img" src="img/quiz-8.png" alt="">
                     </div>
                     <div class="popup__items">
                         <div class="form__group">
-                            <input type="radio" name="answer8" id="answer81" value="Новостройка">
-                            <label for="answer81">Новостройка</label>
+                            <input type="radio" name="answer8" id="answer81" value="Гродно">
+                            <label class="form__group__label" for="answer81">Гродно</label>
                         </div>
                         <div class="form__group">
-                            <input type="radio" name="answer8" id="answer82" value="Вторичное жилье">
-                            <label for="answer82">Вторичное жилье</label>
+                            <input type="radio" name="answer8" id="answer82" value="Гродненский район">
+                            <label class="form__group__label" for="answer82">Гродненский район</label>
                         </div>
                         <div class="form__group">
-                            <input type="radio" name="answer8" id="answer83" value="Частный дом">
-                            <label for="answer83">Частный дом</label>
+                            <input type="radio" name="answer8" id="answer83" value="Гродненская область">
+                            <label class="form__group__label" for="answer83">Гродненская область</label>
                         </div>
                         <div class="form__group">
-                            <input type="radio" name="answer8" id="answer84" value="Другое">
-                            <label for="answer84">Другое</label>
-                        </div>
-                        <div class="form__group form__group_end">
-                            <button type="submit" class="question__btn question__btn_8">Продолжить</button>
+                            <input type="radio" name="answer8" id="answer84" value="Самовывоз">
+                            <label class="form__group__label" for="answer84">Самовывоз</label>
                         </div>
                     </div>
+                </div>
+                <div class="form__group form__group_end">
+                    <button type="submit" class="question__btn question__btn_back8">Назад</button>
+                    <button type="submit" class="question__btn question__btn_8">Продолжить</button>
                 </div>
             </div>
         </div>
@@ -308,71 +315,46 @@
     <section id="question_9" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">9/10</div>
+                <div class="question__number">9/9</div>
                 <div class="popup__header">
-                    <div class="popup__title">Куда нужно будет доставить двери?</div>
+                    <div class="popup__title popup__title_small">Оставьте номер телефона и мы закрепим за Вами подарок, а также в течение дня предоставим расчет полной стоимости заказа.</div>
                 </div>
-                <div class="popup__box">
-                    <div class="popup__items">
-                        <img class="popup__img" src="" alt="">
+                <form class="form__box formSendQuiz">
+                    <div class="form__group__box">
+                        <input type="radio" name="Viber" id="Viber" value="Viber">
+                        <label class="form__group__box__items form__group__box__items_viber" for="Viber">Viber</label>
+                        <input type="radio" name="Telegram" id="Telegram" value="Telegram">
+                        <label class="form__group__box__items form__group__box__items_telegram" for="Telegram">Telegram</label>
+                        <input type="radio" name="Whatsapp" id="Whatsapp" value="Whatsapp">
+                        <label class="form__group__box__items form__group__box__items_whatsapp" for="Whatsapp">Whatsapp</label>
+                        <input type="radio" name="Phone" id="Phone" value="Мобильный">
+                        <label class="form__group__box__items form__group__box__items_phone" for="Phone">Мобильный</label>
                     </div>
-                    <div class="popup__items">
-                        <div class="form__group">
-                            <input type="radio" name="answer9" id="answer91" value="Гродно">
-                            <label for="answer91">Гродно</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="radio" name="answer9" id="answer92" value="Гродненский район">
-                            <label for="answer92">Гродненский район</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="radio" name="answer9" id="answer93" value="Гродненская область">
-                            <label for="answer93">Гродненская область</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="radio" name="answer9" id="answer94" value="Самовывоз">
-                            <label for="answer94">Самовывоз</label>
-                        </div>
-                        <div class="form__group form__group_end">
-                            <button type="submit" class="question__btn question__btn_9">Продолжить</button>
-                        </div>
+                    <div class="form__group">
+                        <input class="popup__input" type="text" name="nameQuiz" id="nameQuiz" placeholder="Ваше имя">
                     </div>
-                </div>
+                    <div class="form__group">
+                        <input class="popup__input" type="text" name="phoneQuiz" id="phoneQuiz" placeholder="Ваше телефон">
+                    </div>
+                    <div class="form__group">
+                        <div class="form__group__error error" id="status__error"></div>
+                    </div>
+                    <div class="form__group form__group_end">
+                        <button type="submit" class="question__btn question__btn_back9">Назад</button>
+                        <button type="submit" id="ajax_send" class="question__btn question__btn_9">Продолжить</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
     <section id="question_10" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="question__number">10/10</div>
                 <div class="popup__header">
-                    <div class="popup__title">Оставьте номер телефона и мы закрепим за Вами подарок, а также в течение дня предоставим расчет полной стоимости заказа.</div>
+                    <div class="popup__title popup__title_small">Оставьте номер телефона и мы закрепим за Вами подарок, а также в течение дня предоставим расчет полной стоимости заказа.</div>
                 </div>
-                <div class="popup__box">
-                    <div class="popup__items">
-                        <img class="popup__img" src="" alt="">
-                    </div>
-                    <form class="popup__items formSendQuiz">
-                        <div class="form__group">
-                            <input type="radio" name="answer10" id="answer101" value="Viber">
-                            <label for="answer101">Viber</label>
-                            <input type="radio" name="answer10" id="answer102" value="Telegram">
-                            <label for="answer102">Telegram</label>
-                            <input type="radio" name="answer10" id="answer103" value="Whatsapp">
-                            <label for="answer103">Whatsapp</label>
-                            <input type="radio" name="answer10" id="answer104" value="Мобильный">
-                            <label for="answer104">Мобильный</label>
-                        </div>
-                        <div class="form__group">
-                            <input class="popup__input" type="text" name="nameQuiz" id="nameQuiz">
-                        </div>
-                        <div class="form__group">
-                            <input class="popup__input" type="text" name="phoneQuiz" id="phoneQuiz">
-                        </div>
-                        <div class="form__group form__group_end">
-                            <button type="submit" class="question__btn question__btn_10">Продолжить</button>
-                        </div>
-                    </form>
+                <div class="form__group form__group_end">
+                    <button type="submit" id="ajax_send" class="question__btn question__btn_10">Вернуться на главную страницу</button>
                 </div>
             </div>
         </div>
