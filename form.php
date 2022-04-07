@@ -1,10 +1,11 @@
 <?php
 $username = trim($_POST['name']);
 $phone = trim($_POST['phone']);
-$viber = "";
-$telegram = "";
-$whatsapp = "";
-$phoneSeparate = "";
+$viber = "-";
+$telegram = "-";
+$whatsapp = "-";
+$phoneSeparate = "-";
+$question2Answer = "-";
 $viber = trim($POST['viber']);
 $telegram = trim($POST['telegram']);
 $whatsapp = trim($POST['whatsapp']);
@@ -19,7 +20,7 @@ $question7Answer = trim($_POST['question7Answer']);
 $question8Answer = trim($_POST['question8Answer']);
 $to = "v.korpik2010yandex.by";
 $subject = "Сообщение с сайта (dvernik-grodno). Пройден квиз";
-$message = "Имя: $username \nТелефон: $phone \nЧто Вас интересует в Китае? \n$question1Answer \nЕсть ли у вас уже поставщик в Китае? $question2Answer \nРаботали ли ранее с Китаем? $question3Answer \nЕсть ли у вас готовое техническое задание на поиск, производство? $question4Answer";
+$message = "Имя: $username \nТелефон: $phone \nСредство для связи: viber: $viber | telegram: $telegram | whatsapp: $whatsapp | мобильный: $phoneSeparate \nТип дверей: $question1Answer \nКоличество дверных проемов: $question2Answer \nНужна ли установка? $question3Answer \nНужны ли Вам откосы? $question4Answer \nИз какого материала нужны двери? $question5Answer \nКакая конструкция дверей нужна? $question6Answer \nВ какой тип жилья нужны двери? $question7Answer \nКуда нужно будет доставить двери? $question8Answer";
 
 mail($to, $subject, $message);
 ?>
